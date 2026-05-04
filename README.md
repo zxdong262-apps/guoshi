@@ -93,15 +93,6 @@ If you find any issues, please open an issue on GitHub.
 - [China vs United States](https://china-vs-us.html5beta.com/)
 - [China vs Rest of the World](https://china-vs-rest-of-the-world.html5beta.com/)
 
-## Other Projects in Matrix
-
-This project is part of the **Matrix** data visualization project series:
-
-- [China vs India](https://china-vs-india.html5beta.com/)
-- [China vs United States](https://china-vs-us.html5beta.com/)
-- [China vs Rest of the World](https://china-vs-rest-of-the-world.html5beta.com/)
-- [Guoshi - China's National Heroes](https://guoshi.html5beta.com)
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
