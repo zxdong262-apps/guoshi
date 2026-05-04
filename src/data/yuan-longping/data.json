@@ -1,0 +1,84 @@
+{
+  "id": "yuan-longping",
+  "name": "袁隆平",
+  "nameEn": "Yuan Longping",
+  "altNames": ["Father of Hybrid Rice", "杂交水稻之父", "袁爷爷"],
+  "lifeYears": "1930-2021",
+  "title": "杂交水稻之父",
+  "titleEn": "Father of Hybrid Rice",
+  "description": "中国研究与发展杂交水稻的开创者，为解决世界粮食安全问题作出重大贡献。",
+  "descriptionEn": "Pioneer of hybrid rice research in China, made significant contributions to world food security.",
+  "wikiUrl": "https://en.wikipedia.org/wiki/Yuan_Longping",
+  "category": "science",
+  "quotes": [
+    {
+      "text": "我有两个梦，一个是禾下乘凉梦，一个是杂交水稻覆盖全球梦。",
+      "textEn": "I have two dreams: one is to rest under rice stalks taller than sorghum, the other is for hybrid rice to cover the globe.",
+      "source": "接受采访时",
+      "sourceEn": "Interview"
+    },
+    {
+      "text": "人就像种子，要做一粒好种子。",
+      "textEn": "People are like seeds. Be a good seed.",
+      "source": "对青年人的寄语",
+      "sourceEn": "Message to young people"
+    },
+    {
+      "text": "我不在家就在试验田，不在试验田就在去试验田的路上。",
+      "textEn": "If I'm not at home, I'm in the experimental field. If I'm not in the experimental field, I'm on my way to the experimental field.",
+      "source": "自述",
+      "sourceEn": "Self-description"
+    },
+    {
+      "text": "书本和电脑很重要，但是书本和电脑里种不出水稻来。",
+      "textEn": "Books and computers are important, but you can't grow rice in books or computers.",
+      "source": "对学生的教导",
+      "sourceEn": "Teaching to students"
+    },
+    {
+      "text": "我毕生的追求就是让所有人远离饥饿。",
+      "textEn": "My lifelong pursuit is to free everyone from hunger.",
+      "source": "接受采访时",
+      "sourceEn": "Interview"
+    },
+    {
+      "text": "成功没有捷径。我不在家，就在试验田；不在试验田，就在去试验田的路上。",
+      "textEn": "There is no shortcut to success. If I'm not at home, I'm in the experimental field; if I'm not in the experimental field, I'm on my way there.",
+      "source": "自述",
+      "sourceEn": "Self-description"
+    },
+    {
+      "text": "科学研究要勇于探索，勇于创新，这个是关键。",
+      "textEn": "Scientific research requires the courage to explore and innovate. That is the key.",
+      "source": "学术报告",
+      "sourceEn": "Academic report"
+    },
+    {
+      "text": "我觉得，人就像一粒种子。要做一粒健康的种子，身体、精神、情感都要健康。",
+      "textEn": "I think people are like seeds. You must be a healthy seed — healthy in body, mind, and emotion.",
+      "source": "对青年人的寄语",
+      "sourceEn": "Message to young people"
+    },
+    {
+      "text": "发展杂交水稻，造福世界人民。",
+      "textEn": "Develop hybrid rice to benefit the people of the world.",
+      "source": "题词",
+      "sourceEn": "Inscription"
+    },
+    {
+      "text": "一粒粮食能救一个国家，也可以绊倒一个国家。",
+      "textEn": "A single grain of rice can save a country, or can trip up a country.",
+      "source": "接受采访时",
+      "sourceEn": "Interview"
+    }
+  ],
+  "photos": [
+    {
+      "file": "yuan-longping-field.jpg",
+      "alt": "袁隆平在稻田",
+      "altEn": "Yuan Longping in rice field",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 3.0"
+    }
+  ]
+}

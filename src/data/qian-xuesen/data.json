@@ -1,0 +1,103 @@
+{
+  "id": "qian-xuesen",
+  "name": "钱学森",
+  "nameEn": "Qian Xuesen",
+  "altNames": ["Tsien Hsue-shen", "钱学森博士", "中国航天之父"],
+  "lifeYears": "1911-2009",
+  "title": "中国航天之父、中国导弹之父",
+  "titleEn": "Father of Chinese Aerospace and Missile Programs",
+  "description": "世界著名空气动力学家，中国载人航天奠基人，\"两弹一星\"功勋奖章获得者。",
+  "descriptionEn": "World-renowned aerodynamicist, founder of China's manned space program, \"Two Bombs, One Satellite\" medal recipient.",
+  "wikiUrl": "https://en.wikipedia.org/wiki/Qian_Xuesen",
+  "category": "science",
+  "quotes": [
+    {
+      "text": "我的事业在中国，我的成就在中国，我的归宿在中国。",
+      "textEn": "My career is in China, my achievements are in China, my destination is in China.",
+      "source": "回国时",
+      "sourceEn": "Upon returning to China"
+    },
+    {
+      "text": "在美国期间，有人好几次问我存了保险金没有，我说一块美元也不存。",
+      "textEn": "During my time in the US, I was asked several times if I had saved any insurance money. I said I hadn't saved a single dollar.",
+      "source": "回忆留美经历",
+      "sourceEn": "Recalling his time in the US"
+    },
+    {
+      "text": "因为我是中国人，根本不打算在美国住一辈子。",
+      "textEn": "Because I am a Chinese, I never intended to live in America forever.",
+      "source": "回忆留美经历",
+      "sourceEn": "Recalling his time in the US"
+    },
+    {
+      "text": "我在美国前三四年是学习，后十几年是工作，所有这一切都在做准备，为了回到祖国后能为人民做点事。",
+      "textEn": "My first three or four years in America were for study, the next ten-odd years for work. All of this was preparation, so that after returning to the motherland I could do something for the people.",
+      "source": "回忆留美经历",
+      "sourceEn": "Recalling his time in the US"
+    },
+    {
+      "text": "我很高兴能回到自己的国家，我不打算再回美国，今后我将竭尽努力，和中国人民一道建设自己的国家，使我的同胞能过上有尊严的幸福生活。",
+      "textEn": "I am very happy to be back in my own country. I do not plan to go back to America. I will do my utmost to build our country together with the Chinese people, so that my compatriots can live a life of dignity and happiness.",
+      "source": "回国声明 1955年",
+      "sourceEn": "Statement upon returning to China (1955)"
+    },
+    {
+      "text": "科学上没有平坦的大道，只有不畏劳苦沿着陡峭山路攀登的人，才有希望达到光辉的顶点。",
+      "textEn": "There is no smooth road in science. Only those who are not afraid of hard work and climb the steep mountain paths have hope of reaching the brilliant summit.",
+      "source": "学术报告",
+      "sourceEn": "Academic report"
+    },
+    {
+      "text": "不要失去信心，只要坚持不懈，就终会有成果的。",
+      "textEn": "Don't lose confidence. As long as you persevere, you will eventually achieve results.",
+      "source": "与青年科研人员谈话",
+      "sourceEn": "Talk with young researchers"
+    },
+    {
+      "text": "正确的结果，是从大量错误中得出来的；没有大量错误作台阶，也就登不上最后正确结果的高座。",
+      "textEn": "Correct results come from a large number of mistakes; without a large number of mistakes as stepping stones, one cannot reach the high seat of final correct results.",
+      "source": "学术报告",
+      "sourceEn": "Academic report"
+    },
+    {
+      "text": "常常是最后一把钥匙打开了门。",
+      "textEn": "It is often the last key that opens the door.",
+      "source": "与科研人员谈话",
+      "sourceEn": "Talk with researchers"
+    },
+    {
+      "text": "我作为一名中国的科技工作者，活着的目的就是为人民服务。",
+      "textEn": "As a Chinese scientific and technological worker, the purpose of my life is to serve the people.",
+      "source": "晚年谈话",
+      "sourceEn": "Late-life conversation"
+    },
+    {
+      "text": "我们不能人云亦云，这不是科学精神，科学精神最重要的就是创新。",
+      "textEn": "We cannot just follow what others say. This is not the scientific spirit. The most important thing in the scientific spirit is innovation.",
+      "source": "学术报告",
+      "sourceEn": "Academic report"
+    },
+    {
+      "text": "难道搞科学的人只需要数据和公式吗？搞科学的人同样需要有灵感，而我的灵感，许多就是来自于艺术。",
+      "textEn": "Do people who do science only need data and formulas? Scientists also need inspiration, and much of my inspiration comes from art.",
+      "source": "关于科学与艺术的谈话",
+      "sourceEn": "On science and art"
+    }
+  ],
+  "photos": [
+    {
+      "file": "qian-xuesen.jpg",
+      "alt": "钱学森标准像",
+      "altEn": "Portrait of Qian Xuesen",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain"
+    },
+    {
+      "file": "qian-xuesen-young.jpg",
+      "alt": "青年钱学森",
+      "altEn": "Young Qian Xuesen",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain"
+    }
+  ]
+}

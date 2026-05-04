@@ -1,0 +1,32 @@
+extends layout
+
+block head
+  if lang === 'en'
+    meta(property="og:title" content="Guoshi Blog - Stories of National Heroes")
+    meta(property="og:description" content="Read stories and insights about China's national heroes")
+    title Guoshi Blog - Stories of National Heroes
+  else
+    meta(property="og:title" content="国士博客 - 国家英雄的故事")
+    meta(property="og:description" content="阅读关于中国国家英雄的故事和见解")
+    title 国士博客 - 国家英雄的故事
+
+block content
+  .blog-page
+    .blog-hero
+      if lang === 'en'
+        h1 Guoshi Blog
+        p.subtitle Stories and insights about China's national heroes
+      else
+        h1 国士博客
+        p.subtitle 关于中国国家英雄的故事和见解
+    
+    .blog-list
+      each post in posts
+        .blog-card
+          a.blog-card-link(href=`/blog/${post.slug}`)
+            .blog-card-content
+              h2.blog-card-title= lang === 'en' ? post.titleEn : post.title
+              p.blog-card-excerpt= lang === 'en' ? post.excerptEn : post.excerpt
+              .blog-card-meta
+                span.blog-card-date= post.date
+                span.blog-card-category= lang === 'en' ? post.categoryEn : post.category

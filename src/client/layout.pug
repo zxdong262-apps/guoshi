@@ -1,0 +1,59 @@
+doctype html
+html(lang=lang || "zh-CN")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    if lang === 'en'
+      meta(name="description" content="Guoshi - China's National Heroes")
+      title Guoshi - China's National Heroes
+    else
+      meta(name="description" content="国士 - 中国国家英雄纪念网站")
+      title 国士 - 中国国家英雄
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap")
+    link(rel="stylesheet" href="/css/style.css")
+    block head
+  
+  body
+    header.header
+      .container
+        a.logo(href="/")= lang === 'en' ? 'Guoshi' : '国士'
+        nav.nav
+          a(href="/")= lang === 'en' ? 'Home' : '首页'
+          each category in categories || []
+            if lang === 'en'
+              a(href=`/#${category}`)= category === 'politics' ? 'Politicians' : category === 'science' ? 'Scientists' : 'Cultural Figures'
+            else
+              a(href=`/#${category}`)= category === 'politics' ? '政治家' : category === 'science' ? '科学家' : '文化名人'
+          a(href="/blog")= lang === 'en' ? 'Blog' : '博客'
+        .lang-switcher
+          button.lang-btn#lang-toggle(data-lang=lang || "zh")= lang === 'en' ? '中文' : 'EN'
+    
+    main.main
+      .container
+        block content
+    
+    footer.footer
+      .container
+        .footer-content
+          .footer-info
+            p= lang === 'en' ? 'Guoshi - Honoring China\'s National Heroes' : '国士 - 纪念中国国家英雄'
+            p
+              a(href="https://github.com/zxdong262/guoshi" target="_blank" rel="noopener") GitHub
+              span  | 
+              a(href="/")= lang === 'en' ? 'Home' : '首页'
+              span  | 
+              a(href="/blog")= lang === 'en' ? 'Blog' : '博客'
+          .footer-qr
+            img#footer-qr-code(src="" alt="QR Code")
+            if lang === 'en'
+              p Scan to visit on mobile
+            else
+              p 扫码在手机上访问
+    
+    script.
+      window.currentPageUrl = '#{productionBaseUrl}' + window.location.pathname;
+    script(src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js")
+    script(src="/js/main.js")
+    block scripts

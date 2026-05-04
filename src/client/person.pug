@@ -1,0 +1,125 @@
+extends layout
+
+block head
+  if lang === 'en'
+    meta(property="og:title" content=`${person.nameEn} - Guoshi`)
+    meta(property="og:description" content=person.descriptionEn)
+  else
+    meta(property="og:title" content=`${person.name} - 国士`)
+    meta(property="og:description" content=person.description)
+  meta(property="og:type" content="profile")
+  meta(property="og:url" content=getPersonUrl(person.id))
+  meta(property="og:image" content=`${productionBaseUrl}/${person.id}/photos/${person.photos[0].file}`)
+
+block content
+  .person-page
+    .person-header
+      a.back-link(href="/")= lang === 'en' ? '← Back to list' : '← 返回列表'
+    
+    .person-content
+      .person-portrait-section
+        .portrait-container
+          img.portrait-image#portrait-image(
+            src=`/${person.id}/photos/${person.photos[0].file}`
+            alt=lang === 'en' ? (person.photos[0].altEn || person.nameEn) : person.photos[0].alt
+          )
+        
+        if person.photos.length > 1
+          .photo-selector
+            h3= lang === 'en' ? 'Photo Selection' : '照片选择'
+            .photo-thumbs
+              each photo, index in person.photos
+                .photo-thumb(
+                  data-src=`/${person.id}/photos/${photo.file}`
+                  class=index === 0 ? 'active' : ''
+                )
+                  img(src=`/${person.id}/photos/${photo.file}` alt=lang === 'en' ? (photo.altEn || person.nameEn) : photo.alt)
+        
+        .style-switcher
+          h3= lang === 'en' ? 'Image Style' : '图片风格'
+          .style-buttons
+            each style in imageStyles
+              button.style-btn(
+                data-style=style.id
+                class=style.id === 'original' ? 'active' : ''
+              )= lang === 'en' ? style.nameEn : style.name
+        
+        .portrait-actions
+          button.action-btn#print-btn= lang === 'en' ? 'Print Poster' : '打印海报'
+          button.action-btn#save-image-btn= lang === 'en' ? 'Save as Image' : '保存为图片'
+      
+      .person-details
+        if lang === 'en'
+          h1.person-name= person.nameEn
+          if person.altNames && person.altNames.length > 0
+            p.person-alt-names= person.altNames.join(' / ')
+          p.person-years= person.lifeYears
+          p.person-title= person.titleEn
+          .person-description
+            p= person.descriptionEn
+        else
+          h1.person-name= person.name
+          if person.altNames && person.altNames.length > 0
+            p.person-alt-names= person.altNames.join(' / ')
+          p.person-name-en= person.nameEn
+          p.person-years= person.lifeYears
+          p.person-title= person.title
+          .person-description
+            p= person.description
+        
+        if person.quotes && person.quotes.length > 0
+          .person-quote-section
+            .quote-selector
+              if person.quotes.length > 1
+                .quote-nav
+                  button.quote-nav-btn.quote-prev ‹
+                  span.quote-counter 1 / #{person.quotes.length}
+                  button.quote-nav-btn.quote-next ›
+            blockquote.quote#quote-display
+              if lang === 'en'
+                p.quote-text= person.quotes[0].textEn
+                cite.quote-source= person.quotes[0].sourceEn
+              else
+                p.quote-text= person.quotes[0].text
+                cite.quote-source= person.quotes[0].source
+            .quote-dots
+              each quote, index in person.quotes
+                span.quote-dot(class=index === 0 ? 'active' : '' data-index=index)
+        
+        .person-links
+          a.wiki-link(href=person.wikiUrl target="_blank" rel="noopener")= lang === 'en' ? 'Wikipedia' : '维基百科'
+    
+    .other-persons
+      h2= lang === 'en' ? 'Other National Heroes' : '其他国士'
+      .other-persons-grid
+        each otherPerson in persons.filter(p => p.id !== person.id).slice(0, 4)
+          .other-person-card
+            a(href=`/${otherPerson.id}`)
+              img(src=`/${otherPerson.id}/photos/${otherPerson.photos[0].file}` alt=lang === 'en' ? otherPerson.nameEn : otherPerson.name loading="lazy")
+              span= lang === 'en' ? otherPerson.nameEn : otherPerson.name
+  
+  .print-poster#print-poster
+    img.print-poster-bg#print-poster-bg(src="" alt="")
+    .print-poster-overlay
+      if lang === 'en'
+        h1.print-poster-name= person.nameEn
+        if person.altNames && person.altNames.length > 0
+          p.print-poster-alt-names= person.altNames.join(' / ')
+        if person.quotes && person.quotes.length > 0
+          p.print-poster-quote= person.quotes[0].textEn
+          cite.print-poster-source= person.quotes[0].sourceEn
+      else
+        h1.print-poster-name= person.name
+        if person.altNames && person.altNames.length > 0
+          p.print-poster-alt-names= person.altNames.join(' / ')
+        if person.quotes && person.quotes.length > 0
+          p.print-poster-quote= person.quotes[0].text
+          cite.print-poster-source= person.quotes[0].source
+    .print-poster-qr
+      img#print-qr-code(src="" alt="QR Code")
+
+  script.
+    window.personQuotes = !{JSON.stringify(person.quotes || [])};
+    window.currentLang = '#{lang || "zh"}';
+    window.personUrl = '#{productionBaseUrl}/#{person.id}';
+    window.personPhoto = '/#{person.id}/photos/#{person.photos[0].file}';

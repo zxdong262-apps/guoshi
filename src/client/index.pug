@@ -1,0 +1,111 @@
+extends layout
+
+block head
+  if lang === 'en'
+    meta(property="og:title" content="Guoshi - China's National Heroes")
+    meta(property="og:description" content="Honoring China's national heroes, showcasing their portraits and famous quotes")
+    title Guoshi - China's National Heroes
+  else
+    meta(property="og:title" content="国士 - 中国国家英雄")
+    meta(property="og:description" content="纪念中国国家英雄，展示他们的肖像和名言")
+    title 国士 - 中国国家英雄
+  meta(property="og:type" content="website")
+  meta(property="og:url" content=productionBaseUrl)
+
+block content
+  .hero
+    if lang === 'en'
+      h1 Guoshi
+      p.subtitle China's National Heroes
+      p.description These are individuals who have made extraordinary contributions to the nation. They are the backbone of China.
+    else
+      h1 国士
+      p.subtitle 中国国家英雄纪念网站
+      p.description 这些是为国家做出卓越贡献的人物，他们是中国的脊梁。
+  
+  .categories
+    each category in categories
+      section.category(id=category)
+        if lang === 'en'
+          h2= category === 'politics' ? 'Politicians' : category === 'science' ? 'Scientists' : 'Cultural Figures'
+        else
+          h2= category === 'politics' ? '政治家' : category === 'science' ? '科学家' : '文化名人'
+        .persons-grid
+          each person in persons.filter(p => p.category === category)
+            .person-card
+              a.person-link(href=`/${person.id}`)
+                .person-image
+                  img(src=`/${person.id}/photos/${person.photos[0].file}` alt=lang === 'en' ? person.nameEn : person.name loading="lazy")
+                .person-info
+                  if lang === 'en'
+                    h3.person-name= person.nameEn
+                    if person.altNames && person.altNames.length > 0
+                      p.person-alt-names= person.altNames[0]
+                    p.person-years= person.lifeYears
+                    if person.quotes && person.quotes.length > 0
+                      p.person-quote= person.quotes[0].textEn
+                  else
+                    h3.person-name= person.name
+                    if person.altNames && person.altNames.length > 0
+                      p.person-alt-names= person.altNames[0]
+                    p.person-name-en= person.nameEn
+                    p.person-years= person.lifeYears
+                    if person.quotes && person.quotes.length > 0
+                      p.person-quote= person.quotes[0].text
+  
+  .styles-info
+    if lang === 'en'
+      h2 Image Styles
+      p Each hero's portrait has multiple artistic styles:
+    else
+      h2 图片风格
+      p 每位英雄的肖像都有多种艺术风格：
+    .styles-list
+      each style in imageStyles
+        .style-item
+          span.style-name= lang === 'en' ? style.nameEn : style.name
+  
+  .faq-section
+    if lang === 'en'
+      h2 Frequently Asked Questions
+      .faq-item
+        h3.faq-question What is "Guoshi"?
+        .faq-answer
+          p "Guoshi" (国士) literally means "national hero" or "great scholar of the nation." It refers to individuals who have made extraordinary contributions to China's development and prosperity.
+      .faq-item
+        h3.faq-question How are the heroes selected?
+        .faq-answer
+          p The heroes featured on this site are selected based on their significant contributions to China's political, scientific, or cultural development. They represent the spirit of dedication and service to the nation.
+      .faq-item
+        h3.faq-question Can I use these images?
+        .faq-answer
+          p The images used on this site are sourced from Wikimedia Commons and are available under various free licenses. Please check the individual image sources for specific license requirements.
+      .faq-item
+        h3.faq-question How can I contribute?
+        .faq-answer
+          p We welcome contributions! Please visit our GitHub repository to submit suggestions, corrections, or new hero profiles.
+    else
+      h2 常见问题
+      .faq-item
+        h3.faq-question 什么是"国士"？
+        .faq-answer
+          p "国士"指的是对国家发展做出卓越贡献的人物。他们代表了奉献和服务国家的精神。
+      .faq-item
+        h3.faq-question 如何选择英雄人物？
+        .faq-answer
+          p 本站收录的人物是基于他们对中国政治、科学或文化发展的重要贡献。他们代表了奉献和服务国家的精神。
+      .faq-item
+        h3.faq-question 可以使用这些图片吗？
+        .faq-answer
+          p 本站使用的图片来自维基共享资源，遵循各种自由许可协议。请查看各个图片的具体许可要求。
+      .faq-item
+        h3.faq-question 如何贡献？
+        .faq-answer
+          p 我们欢迎贡献！请访问我们的 GitHub 仓库提交建议、更正或新的人物介绍。
+
+  script.
+    document.querySelectorAll('.faq-question').forEach(function(q) {
+      q.addEventListener('click', function() {
+        this.parentElement.classList.toggle('active');
+      });
+    });

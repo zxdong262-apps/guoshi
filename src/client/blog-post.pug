@@ -1,0 +1,35 @@
+extends layout
+
+block head
+  if lang === 'en'
+    meta(property="og:title" content=`${post.titleEn} - Guoshi Blog`)
+    meta(property="og:description" content=post.excerptEn)
+  else
+    meta(property="og:title" content=`${post.title} - 国士博客`)
+    meta(property="og:description" content=post.excerpt)
+  meta(property="og:type" content="article")
+  meta(property="og:url" content=`${productionBaseUrl}/blog/${post.slug}`)
+
+block content
+  .blog-post-page
+    .blog-header
+      a.back-link(href="/blog")= lang === 'en' ? '← Back to Blog' : '← 返回博客'
+    
+    article.blog-article
+      h1.blog-title= lang === 'en' ? post.titleEn : post.title
+      .blog-meta
+        span.blog-date= post.date
+        span.blog-author= lang === 'en' ? post.authorEn : post.author
+        span.blog-category= lang === 'en' ? post.categoryEn : post.category
+      
+      .blog-content!= lang === 'en' ? post.contentEn : post.content
+    
+    .blog-navigation
+      if prevPost
+        a.blog-nav-link.prev(href=`/blog/${prevPost.slug}`)
+          span.blog-nav-label= lang === 'en' ? '← Previous' : '← 上一篇'
+          span.blog-nav-title= lang === 'en' ? prevPost.titleEn : prevPost.title
+      if nextPost
+        a.blog-nav-link.next(href=`/blog/${nextPost.slug}`)
+          span.blog-nav-label= lang === 'en' ? 'Next →' : '下一篇 →'
+          span.blog-nav-title= lang === 'en' ? nextPost.titleEn : nextPost.title

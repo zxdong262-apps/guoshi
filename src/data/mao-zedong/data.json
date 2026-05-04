@@ -1,0 +1,181 @@
+{
+  "id": "mao-zedong",
+  "name": "毛泽东",
+  "nameEn": "Mao Zedong",
+  "altNames": ["Chairman Mao", "毛主席", "毛委员", "毛润之"],
+  "lifeYears": "1893-1976",
+  "title": "伟大的无产阶级革命家、战略家和理论家",
+  "titleEn": "Great Proletarian Revolutionary, Strategist and Theoretician",
+  "description": "中国共产党、中国人民解放军和中华人民共和国的主要缔造者和领导人，诗人，书法家。",
+  "descriptionEn": "Principal founder of the CPC, the PPLA and the PRC. Poet and calligrapher.",
+  "wikiUrl": "https://en.wikipedia.org/wiki/Mao_Zedong",
+  "category": "politics",
+  "quotes": [
+    {
+      "text": "为人民服务",
+      "textEn": "Serve the People",
+      "source": "《为人民服务》1944年",
+      "sourceEn": "\"Serve the People\" (1944)"
+    },
+    {
+      "text": "人民，只有人民，才是创造世界历史的动力。",
+      "textEn": "The people, and the people alone, are the motive force in the making of world history.",
+      "source": "《论联合政府》1945年",
+      "sourceEn": "\"On Coalition Government\" (1945)"
+    },
+    {
+      "text": "枪杆子里面出政权。",
+      "textEn": "Political power grows out of the barrel of a gun.",
+      "source": "八七会议讲话 1927年",
+      "sourceEn": "Speech at the Emergency Meeting of the CPC (1927)"
+    },
+    {
+      "text": "星星之火，可以燎原。",
+      "textEn": "A single spark can start a prairie fire.",
+      "source": "《星星之火，可以燎原》1930年",
+      "sourceEn": "\"A Single Spark Can Start a Prairie Fire\" (1930)"
+    },
+    {
+      "text": "枪杆子里面出政权。",
+      "textEn": "Political power grows out of the barrel of a gun.",
+      "source": "八七会议讲话 1927年",
+      "sourceEn": "Speech at the Emergency Meeting of the CPC (1927)"
+    },
+    {
+      "text": "自己动手，丰衣足食。",
+      "textEn": "Use your own hands, you'll have ample food and clothing.",
+      "source": "为大生产运动题词 1943年",
+      "sourceEn": "Inscription for the Great Production Movement (1943)"
+    },
+    {
+      "text": "好好学习，天天向上。",
+      "textEn": "Study hard and make progress every day.",
+      "source": "为少年儿童题词 1951年",
+      "sourceEn": "Inscription for children (1951)"
+    },
+    {
+      "text": "世界是你们的，也是我们的，但是归根结底是你们的。",
+      "textEn": "The world is yours, as well as ours, but in the last analysis, it is yours.",
+      "source": "接见留苏学生讲话 1957年",
+      "sourceEn": "Speech to Chinese students in Moscow (1957)"
+    },
+    {
+      "text": "一切反动派都是纸老虎。",
+      "textEn": "All reactionaries are paper tigers.",
+      "source": "和美国记者安娜·路易斯·斯特朗的谈话 1946年",
+      "sourceEn": "Interview with American journalist Anna Louise Strong (1946)"
+    },
+    {
+      "text": "人不犯我，我不犯人；人若犯我，我必犯人。",
+      "textEn": "We will not attack unless we are attacked; if we are attacked, we will certainly counterattack.",
+      "source": "《目前抗日统一战线中的策略问题》1940年",
+      "sourceEn": "\"On the Question of the United Front Against Japan\" (1940)"
+    },
+    {
+      "text": "下定决心，不怕牺牲，排除万难，去争取胜利。",
+      "textEn": "Be resolute, fear no sacrifice, and surmount every difficulty to win victory.",
+      "source": "《愚公移山》1945年",
+      "sourceEn": "\"The Foolish Old Man Who Removed the Mountains\" (1945)"
+    },
+    {
+      "text": "领导我们事业的核心力量是中国共产党，指导我们思想的理论基础是马克思列宁主义。",
+      "textEn": "The force at the core leading our cause forward is the Chinese Communist Party. The theoretical basis guiding our thinking is Marxism-Leninism.",
+      "source": "第一届全国人民代表大会开幕词 1954年",
+      "sourceEn": "Opening address at the First Session of the First National People's Congress (1954)"
+    },
+    {
+      "text": "我们都是来自五湖四海，为了一个共同的革命目标，走到一起来了。",
+      "textEn": "We hail from all corners of the country and have joined together for a common revolutionary objective.",
+      "source": "《为人民服务》1944年",
+      "sourceEn": "\"Serve the People\" (1944)"
+    },
+    {
+      "text": "毫不利己，专门利人。",
+      "textEn": "Be utterly devoted to others without any selfishness.",
+      "source": "《纪念白求恩》1939年",
+      "sourceEn": "\"In Memory of Norman Bethune\" (1939)"
+    },
+    {
+      "text": "学习的敌人是自己的满足，要认真学习一点东西，必须从不自满开始。",
+      "textEn": "The enemy of learning is self-satisfaction. To really learn something, one must start by not being self-satisfied.",
+      "source": "《中国共产党在民族战争中的地位》1938年",
+      "sourceEn": "\"The Role of the Chinese Communist Party in the National War\" (1938)"
+    },
+    {
+      "text": "一万年太久，只争朝夕。",
+      "textEn": "Ten thousand years are too long. Seize the day, seize the hour.",
+      "source": "《满江红·和郭沫若同志》1963年",
+      "sourceEn": "\"Man Jiang Hong: A Reply to Comrade Guo Moruo\" (1963)"
+    },
+    {
+      "text": "数风流人物，还看今朝。",
+      "textEn": "For truly great men, look to this age alone.",
+      "source": "《沁园春·雪》1936年",
+      "sourceEn": "\"Snow: To the Tune of Qin Yuan Chun\" (1936)"
+    },
+    {
+      "text": "问苍茫大地，谁主沉浮？",
+      "textEn": "I ask the vast earth, who rules over destiny?",
+      "source": "《沁园春·长沙》1925年",
+      "sourceEn": "\"Changsha: To the Tune of Qin Yuan Chun\" (1925)"
+    },
+    {
+      "text": "雄关漫道真如铁，而今迈步从头越。",
+      "textEn": "The strong pass is truly like iron, yet now with firm strides we are crossing its summit.",
+      "source": "《忆秦娥·娄山关》1935年",
+      "sourceEn": "\"Loushan Pass: To the Tune of Qin E\" (1935)"
+    },
+    {
+      "text": "恰同学少年，风华正茂；书生意气，挥斥方遒。",
+      "textEn": "With our classmates, in the prime of youth, full of scholarly vigor, we spoke with passionate eloquence.",
+      "source": "《沁园春·长沙》1925年",
+      "sourceEn": "\"Changsha: To the Tune of Qin Yuan Chun\" (1925)"
+    },
+    {
+      "text": "宜将剩勇追穷寇，不可沽名学霸王。",
+      "textEn": "With our remaining courage we should pursue the cornered enemy. We must not seek fame like the Hegemon-King.",
+      "source": "《七律·人民解放军占领南京》1949年",
+      "sourceEn": "\"The PLA Captures Nanjing\" (1949)"
+    },
+    {
+      "text": "天若有情天亦老，人间正道是沧桑。",
+      "textEn": "Were nature sentient, she too would pass from youth to age. The only way forward for mankind is through revolution.",
+      "source": "《七律·人民解放军占领南京》1949年",
+      "sourceEn": "\"The PLA Captures Nanjing\" (1949)"
+    },
+    {
+      "text": "世上无难事，只要肯登攀。",
+      "textEn": "Nothing is difficult in this world if you dare to scale the heights.",
+      "source": "《水调歌头·重上井冈山》1965年",
+      "sourceEn": "\"Reascending Jinggangshan\" (1965)"
+    },
+    {
+      "text": "与天奋斗，其乐无穷；与地奋斗，其乐无穷；与人奋斗，其乐无穷。",
+      "textEn": "To struggle with Heaven is an endless joy; to struggle with Earth is an endless joy; to struggle with people is an endless joy.",
+      "source": "早期日记 1917年",
+      "sourceEn": "Early diary (1917)"
+    }
+  ],
+  "photos": [
+    {
+      "file": "chairman-mao.jpg",
+      "alt": "毛泽东标准像",
+      "altEn": "Official portrait of Mao Zedong",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain"
+    },
+    {
+      "file": "mao-young.jpg",
+      "alt": "青年毛泽东",
+      "altEn": "Young Mao Zedong",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain"
+    },
+    {
+      "file": "mao-1.jpg",
+      "alt": "六代机背景毛泽东",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain"
+    }
+  ]
+}

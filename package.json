@@ -1,0 +1,43 @@
+{
+  "name": "guoshi",
+  "version": "1.0.0",
+  "description": "A static website honoring China's national heroes (国士) - featuring portraits, famous quotes, and artistic style variations",
+  "homepage": "https://github.com/zxdong262/guoshi#readme",
+  "bugs": {
+    "url": "https://github.com/zxdong262/guoshi/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxdong262/guoshi.git"
+  },
+  "license": "MIT",
+  "author": "ZHAO Xudong <zxdong@gmail.com>",
+  "type": "module",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "build": "node src/build/build.js",
+    "server": "node src/server/prod.js",
+    "clean": "rm -rf public",
+    "test": "node --test test/integration.test.js"
+  },
+  "keywords": [
+    "china",
+    "national-heroes",
+    "guoshi",
+    "portraits",
+    "static-site"
+  ],
+  "devDependencies": {
+    "express": "^5.2.1",
+    "fs-extra": "^11.3.4",
+    "pug": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "marked": "^18.0.3"
+  }
+}
