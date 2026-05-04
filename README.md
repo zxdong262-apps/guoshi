@@ -6,7 +6,7 @@
 
 A static website honoring China's national heroes (国士) - featuring portraits, famous quotes, and artistic style variations， for easy saving as images, printing, or PDF.
 
-URL: [https://guoshi.pages.dev](https://guoshi.pages.dev)
+URL: [https://guoshi.html5beta.com](https://guoshi.html5beta.com)
 
 ## Features
 

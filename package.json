@@ -2,13 +2,13 @@
   "name": "guoshi",
   "version": "1.0.0",
   "description": "A static website honoring China's national heroes (国士) - featuring portraits, famous quotes, and artistic style variations",
-  "homepage": "https://github.com/zxdong262/guoshi#readme",
+  "homepage": "https://github.com/zxdong262-apps/guoshi#readme",
   "bugs": {
-    "url": "https://github.com/zxdong262/guoshi/issues"
+    "url": "https://github.com/zxdong262-apps/guoshi/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zxdong262/guoshi.git"
+    "url": "git+https://github.com/zxdong262-apps/guoshi.git"
   },
   "license": "MIT",
   "author": "ZHAO Xudong <zxdong@gmail.com>",

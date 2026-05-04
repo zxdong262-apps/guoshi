@@ -6,7 +6,7 @@
 
 一个纪念中国国家英雄（国士）的静态网站，展示他们的肖像、名言和多种艺术风格, 可以方便的保存图片和打印，或者保存pdf文件
 
-网址：[https://guoshi.pages.dev](https://guoshi.pages.dev)
+网址：[https://guoshi.html5beta.com](https://guoshi.html5beta.com)
 
 ## 功能特点
 

@@ -12,7 +12,7 @@ const CLIENT_DIR = path.join(__dirname, '../client');
 const DATA_DIR = path.join(__dirname, '../data');
 const BLOGS_DIR = path.join(__dirname, '../blogs');
 
-const PRODUCTION_BASE_URL = 'https://guoshi.pages.dev';
+const PRODUCTION_BASE_URL = 'https://guoshi.html5beta.com';
 
 const IMAGE_STYLES = [
   { id: 'original', name: '原图', nameEn: 'Original' },
