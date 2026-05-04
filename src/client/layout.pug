@@ -45,6 +45,17 @@ html(lang=lang || "zh-CN")
               a(href="/")= lang === 'en' ? 'Home' : '首页'
               span  | 
               a(href="/blog")= lang === 'en' ? 'Blog' : '博客'
+          .footer-matrix
+            if lang === 'en'
+              p Matrix Project Series:
+            else
+              p Matrix 项目系列:
+            p
+              a(href="https://china-vs-india.html5beta.com/" target="_blank" rel="noopener") China vs India
+              span  | 
+              a(href="https://china-vs-us.html5beta.com/" target="_blank" rel="noopener") China vs US
+              span  | 
+              a(href="https://china-vs-rest-of-the-world.html5beta.com/" target="_blank" rel="noopener") China vs World
           .footer-qr
             img#footer-qr-code(src="" alt="QR Code")
             if lang === 'en'

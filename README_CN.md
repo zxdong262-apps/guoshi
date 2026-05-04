@@ -87,6 +87,21 @@ npm start
 
 如果发现任何问题，请在 GitHub 上提交 issue。
 
+## 相关链接
+
+- [中国 vs 印度](https://china-vs-india.html5beta.com/)
+- [中国 vs 美国](https://china-vs-us.html5beta.com/)
+- [中国 vs 世界其他国家](https://china-vs-rest-of-the-world.html5beta.com/)
+
+## Matrix 项目系列
+
+本项目是 **Matrix** 数据可视化项目系列的一部分：
+
+- [中国 vs 印度](https://china-vs-india.html5beta.com/)
+- [中国 vs 美国](https://china-vs-us.html5beta.com/)
+- [中国 vs 世界其他国家](https://china-vs-rest-of-the-world.html5beta.com/)
+- [国士 - 中国国家英雄](https://guoshi.html5beta.com)
+
 ## 许可证
 
 本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件。
